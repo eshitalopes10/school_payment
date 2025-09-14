@@ -1,0 +1,22 @@
+### Register
+POST http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "123456"
+}
+
+### Login
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "123456"
+}
+
+### Get Payments (requires token)
+GET http://localhost:5000/api/payments
+Authorization: Bearer <your-token-here>
+
